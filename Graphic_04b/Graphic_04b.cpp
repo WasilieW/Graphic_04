@@ -174,12 +174,26 @@ void DisplayScene()
 	// rysowanie trzech drzew
 	glBindTexture(GL_TEXTURE_2D, TREE);
 	glPushMatrix();
-	glTranslatef(-0.5, 0.0, 0.0);
 	glScalef(0.5, 0.5, 0.5);
+	glTranslatef(-0.5, 0.0, 0.0);
 	glCallList(TREE_LIST);
-	glTranslatef(1.0, 0.0, 0.5);
+	glTranslatef(1.0, 0.0, 0.25);
 	glCallList(TREE_LIST);
-	glTranslatef(1.0, 0.0, 0.5);
+	glTranslatef(1.0, 0.0, 0.25);
+	glCallList(TREE_LIST);;
+	glTranslatef(-1.5, 0.0, 0.25);
+	glCallList(TREE_LIST);
+	glTranslatef(1.0, 0.0, 0.25);
+	glCallList(TREE_LIST);
+	glTranslatef(1.0, 0.0, 0.25);
+	glCallList(TREE_LIST);;
+	glTranslatef(-1.5, 0.0, 0.25);
+	glCallList(TREE_LIST);
+	glTranslatef(1.0, 0.0, 0.25);
+	glCallList(TREE_LIST);
+	glTranslatef(1.0, 0.0, 0.25);
+	glCallList(TREE_LIST);;
+	glTranslatef(0.0, 0.0, -5 * 0.25);
 	glCallList(TREE_LIST);
 	glPopMatrix();
 
