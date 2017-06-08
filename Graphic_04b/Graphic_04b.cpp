@@ -193,7 +193,7 @@ void DisplayScene()
 	glCallList(TREE_LIST);
 	glTranslatef(1.0, 0.0, 0.25);
 	glCallList(TREE_LIST);;
-	glTranslatef(0.0, 0.0, -5 * 0.25);
+	glTranslatef(-1.0, 0.0, 0.5);
 	glCallList(TREE_LIST);
 	glPopMatrix();
 
